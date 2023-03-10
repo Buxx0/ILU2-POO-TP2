@@ -42,7 +42,7 @@ public class Clavier {
 	
 	public static String entrerChaine(String question) {
 		System.out.println(question);
-		String chaine = scan.next();
+		String chaine = scan.nextLine();
 		return chaine;
 	}
 
