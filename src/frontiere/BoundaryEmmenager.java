@@ -42,7 +42,7 @@ public class BoundaryEmmenager {
 
 	private void emmenagerDruide(String nomVisiteur) {
 		StringBuilder questionForce = new StringBuilder();
-		questionForce.append("Bienvenu druide" + nomVisiteur + ".\n");
+		questionForce.append("Bienvenu druide " + nomVisiteur + ".\n");
 		questionForce.append("Quelle est votre force?\n");
 		int forceDruide = Clavier.entrerEntier(questionForce.toString());
 		StringBuilder questionPotionMin = new StringBuilder();
@@ -61,6 +61,10 @@ public class BoundaryEmmenager {
 	}
 	
 	private void emmenagerGaulois(String nomVisiteur) {
-		
+		StringBuilder questionGaulois = new StringBuilder();
+		questionGaulois.append("Bienvenu gaulois " + nomVisiteur + ".\n");
+		questionGaulois.append("Quelle est votre force?\n");
+		int forceGaulois = Clavier.entrerEntier(questionGaulois.toString());
+		controlEmmenager.ajouterGaulois(nomVisiteur, forceGaulois);
 	}
 }
